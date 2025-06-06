@@ -1,0 +1,33 @@
+:root{
+    --pri:#fff;
+    --sec:#111;
+    --tri:lightseagreen;
+
+}
+@font-face {
+    font-family: light;
+    src:url(./Dinglist.otf)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--sec);
+}
+
+h1{
+    font-family: serif;
+    font-weight: 700;
+    color: var(--pri);
+}
