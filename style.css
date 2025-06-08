@@ -257,11 +257,11 @@ section.allElems {
 
 /* Daily-Planner -CSS */
 
-.daily-planner-fullpage h2{
+.daily-planner-fullpage h2 {
     font-size: 70px;
 }
 
- .daily-planner-fullpage .day-planner{
+.daily-planner-fullpage .day-planner {
     background-color: var(--tri2);
     height: 85%;
     margin-top: 40px;
@@ -273,24 +273,24 @@ section.allElems {
     align-items: flex-start;
     justify-content: space-between;
     overflow: auto;
- }
+}
 
-  .daily-planner-fullpage .day-planner .day-planner-time{
+.daily-planner-fullpage .day-planner .day-planner-time {
     display: flex;
     align-items: center;
     position: relative;
     width: 49%;
     margin-bottom: 15px;
-  }
+}
 
-  .day-planner .day-planner-time p{
+.day-planner .day-planner-time p {
     position: absolute;
     top: 12%;
     left: 1%;
     font-size: 18px;
-  }
+}
 
-  .day-planner .day-planner-time input{
+.day-planner .day-planner-time input {
     padding: 20px 40px;
     width: 100%;
     background-color: var(--sec);
@@ -299,4 +299,84 @@ section.allElems {
     font-size: 32px;
     padding-top: 34px;
     outline: none;
-  }
+}
+
+
+/* fullElem Motivational-fullpage */
+
+.Motivational-fullpage{
+    display: block;
+    position: relative;
+
+}
+
+ .Motivational-fullpage .motivation-container{
+ height: 500px;
+ width: 800px;
+ border-radius: 50px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+}
+
+.Motivational-fullpage .motivation-container::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50px;
+    background-color: var(--tri2);
+    scale: 1.2;
+    z-index: 8;
+    filter: blur(100px);
+}
+
+ .Motivational-fullpage .motivation-container .motivation-wraper{
+ z-index: 10;
+ position: absolute;
+ width: 100%;
+ background-color: var(--sec);
+ border-radius: 50px;
+ padding: 15px;
+
+}
+
+.motivation-1{
+    background-color: var(--tri2);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.motivation-1 h2{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.motivation-2{
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.motivation-2 h1{
+    font-size: 35px;
+    font-weight: 200;
+    color: var(--pri);
+    letter-spacing: 2px;
+}
+
+.motivation-3{
+    background-color: var(--tri2);
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.motivation-3 h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+}
