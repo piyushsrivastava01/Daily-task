@@ -1,56 +1,58 @@
-:root{
-    --pri:#F8F4E1;
-    --sec:#4E1F00;
-    --tri1:#3c3012;
-    --tri2:#74512D;
-    --red:red;
+:root {
+    --pri: #F8F4E1;
+    --sec: #4E1F00;
+    --tri1: #3c3012;
+    --tri2: #74512D;
+    --red: red;
 
 }
 
 @font-face {
     font-family: light;
-    src:url(./Dinglist.otf)
+    src: url(./Dinglist.otf)
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: light;
     color: var(--pri);
-   
+
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-#main{
+#main {
     height: 100%;
     width: 100%;
     background-color: var(--sec);
 }
 
-nav{
+nav {
     position: fixed;
     width: 100%;
     height: 60px;
     background-color: var(--tri2);
 }
 
-section.allElems{
-   height: 100%;
-   width: 100%;
-   padding: 40px;
-   padding-top: 80px;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   gap: 40px;
-   position: absolute;
+section.allElems {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
 }
 
-.elem{
+.elem {
     /* background-color: #FEBA17; */
     height: 400px;
     width: 330px;
@@ -60,37 +62,37 @@ section.allElems{
     position: relative;
     transition: all ease 0.2s;
     cursor: pointer;
-   
+
 
 }
 
-.elem img{
+.elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.elem h2{
+.elem h2 {
     position: absolute;
     bottom: 5%;
     right: 5%;
 
 }
 
-.elem:active{
+.elem:active {
     scale: 0.95;
 }
 
-.fullElem{
+.fullElem {
     height: 100%;
     width: 100%;
     background-color: #381c0a;
     padding: 20px;
-   display: none;
-   position: absolute;
+    display: none;
+    position: absolute;
 }
 
-.back{
+.back {
     position: absolute;
     right: 5%;
     background-color: var(--red);
@@ -102,40 +104,40 @@ section.allElems{
     cursor: pointer;
 }
 
-.back:active{
+.back:active {
     scale: 0.97;
 }
 
 
-.Todo-list-fullpage h2{
+.Todo-list-fullpage h2 {
     font-size: 65px;
 }
 
-.Todo-list-fullpage .todo-container{
-  height: 80%;
-  width: 100%;
-  /* background-color: var(--tri1); */
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
+.Todo-list-fullpage .todo-container {
+    height: 80%;
+    width: 100%;
+    /* background-color: var(--tri1); */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.Todo-list-fullpage .todo-container .addTask{
-width: 33%;
-height: 100%;
-border-radius: 20px;
-background-color: var(--tri2);
+.Todo-list-fullpage .todo-container .addTask {
+    width: 33%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--tri2);
 }
 
-.Todo-list-fullpage .todo-container .addTask form{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 30px;
+.Todo-list-fullpage .todo-container .addTask form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
 }
 
-.todo-container .addTask form input#task-input{
+.todo-container .addTask form input#task-input {
     padding: 10px 20px;
     width: 100%;
     font-size: 28px;
@@ -145,9 +147,10 @@ padding: 30px;
     border: none;
     outline: none;
     margin-bottom: 20px;
-    letter-spacing: 1px ;
+    letter-spacing: 1px;
 }
-.todo-container .addTask form textarea{
+
+.todo-container .addTask form textarea {
     padding: 10px 20px;
     width: 100%;
     font-size: 28px;
@@ -156,13 +159,14 @@ padding: 30px;
     border: none;
     outline: none;
     margin-bottom: 20px;
-    letter-spacing: 1px ;
+    letter-spacing: 1px;
 }
-.todo-container .addTask form button{
+
+.todo-container .addTask form button {
     padding: 10px 20px;
     width: 100%;
     font-size: 28px;
-    background-color:rgb(211, 134, 0);
+    background-color: rgb(211, 134, 0);
     color: #482a00;
     border-radius: 5px;
     border: none;
@@ -172,63 +176,66 @@ padding: 30px;
     transition: all ease 0.2s;
 }
 
-.todo-container .addTask form button:active{
+.todo-container .addTask form button:active {
     scale: 0.97;
 }
 
-.Todo-list-fullpage .todo-container .allTask{
-width: 65%;
-background-color: var(--tri2);
-height: 100%;
-border-radius: 20px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 30px;
+.Todo-list-fullpage .todo-container .allTask {
+    width: 65%;
+    background-color: var(--tri2);
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
 }
 
-.task{
-   width: 100%;
-   display: flex; 
-   align-items: center;
-   justify-content: space-between;
-   background-color: var(--pri);
-   padding: 20px 40px;
-   margin-bottom: 10px;
-   border-radius: 10px;
+.task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--pri);
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-.task h5{
-color: var(--sec);
-font-size: 40px;
-display: flex;
-align-items: flex-start;
-gap: 10px;
-}
-.task h5 span{
-background-color: var(--red);
-color: var(--pri);
-padding: 4px 8px;
-border-radius: 50px;
-font-size: 15px;
-}
-.task h5 span.true{
-opacity: 1;
-}
-.task h5 span.false{
-opacity: 0;
+.task h5 {
+    color: var(--sec);
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.task button{
-padding: 15px 30px;
-color: var(--pri);
-background-color:green;
-font-size: 28px;
-border-radius: 5px;
-text-align: center;
+.task h5 span {
+    background-color: var(--red);
+    color: var(--pri);
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 15px;
 }
 
-.Mark-imp{
+.task h5 span.true {
+    opacity: 1;
+}
+
+.task h5 span.false {
+    opacity: 0;
+}
+
+.task button {
+    padding: 15px 30px;
+    color: var(--pri);
+    background-color: green;
+    font-size: 28px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Mark-imp {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -239,9 +246,57 @@ text-align: center;
 }
 
 
-.Mark-imp input{
+.Mark-imp input {
     scale: 2;
 }
-.Mark-imp label{
+
+.Mark-imp label {
     font-size: 20px;
 }
+
+
+/* Daily-Planner -CSS */
+
+.daily-planner-fullpage h2{
+    font-size: 70px;
+}
+
+ .daily-planner-fullpage .day-planner{
+    background-color: var(--tri2);
+    height: 85%;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: auto;
+ }
+
+  .daily-planner-fullpage .day-planner .day-planner-time{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 49%;
+    margin-bottom: 15px;
+  }
+
+  .day-planner .day-planner-time p{
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    font-size: 18px;
+  }
+
+  .day-planner .day-planner-time input{
+    padding: 20px 40px;
+    width: 100%;
+    background-color: var(--sec);
+    border-radius: 5px;
+    border: none;
+    font-size: 32px;
+    padding-top: 34px;
+    outline: none;
+  }
