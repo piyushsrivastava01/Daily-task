@@ -304,24 +304,23 @@ section.allElems {
 
 /* fullElem Motivational-fullpage */
 
-.Motivational-fullpage{
-    display: block;
+.Motivational-fullpage {
     position: relative;
 
 }
 
- .Motivational-fullpage .motivation-container{
- height: 500px;
- width: 800px;
- border-radius: 50px;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
+.Motivational-fullpage .motivation-container {
+    height: 500px;
+    width: 800px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-.Motivational-fullpage .motivation-container::after{
+.Motivational-fullpage .motivation-container::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -333,50 +332,104 @@ section.allElems {
     filter: blur(100px);
 }
 
- .Motivational-fullpage .motivation-container .motivation-wraper{
- z-index: 10;
- position: absolute;
- width: 100%;
- background-color: var(--sec);
- border-radius: 50px;
- padding: 15px;
+.Motivational-fullpage .motivation-container .motivation-wraper {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background-color: var(--sec);
+    border-radius: 50px;
+    padding: 15px;
 
 }
 
-.motivation-1{
+.motivation-1 {
     background-color: var(--tri2);
     padding: 30px;
     border-radius: 30px;
 }
 
-.motivation-1 h2{
+.motivation-1 h2 {
     font-size: 40px;
     font-weight: 500;
 
 }
 
-.motivation-2{
+.motivation-2 {
     margin-top: 20px;
     padding: 10px;
 
 }
 
-.motivation-2 h1{
+.motivation-2 h1 {
     font-size: 35px;
     font-weight: 200;
     color: var(--pri);
     letter-spacing: 2px;
 }
 
-.motivation-3{
+.motivation-3 {
     background-color: var(--tri2);
     padding: 30px;
     border-radius: 30px;
     margin-top: 30px;
 }
 
-.motivation-3 h2{
+.motivation-3 h2 {
     font-size: 40px;
     font-weight: 500;
     text-align: right;
+}
+
+/* pomodoro-fullpage */
+
+.pomodoro-fullpage h2 {
+    font-size: 50px;
+}
+
+.pomodoro-fullpage .pomo-timer {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pomo-timer h1 {
+    font-size: 170px;
+}
+
+.pomo-timer button {
+    background-color: var(--tri2);
+    padding: 15px 40px;
+    font-size: 32px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-shadow: 7px 7px 0px var(--black);
+    box-shadow: 7px 7px 0px var(--black);
+    -webkit-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+    font-weight: 700;
+}
+
+.pomo-timer button:active {
+    -webkit-box-shadow: 0px 0px 0px var(--black);
+    box-shadow: 0px 0px 0px var(--black);
+
+}
+
+.pomodoro-fullpage .session {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-color: var(--green);
+    padding: 15px 30px;
+    font-size: 30px;
+    border-radius: 5px;
 }
